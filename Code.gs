@@ -1,12 +1,12 @@
 //Load Moment Library
 var moment = Moment.load();
-var calChoice = "uwlawschoolhelp@gmail.com";
+var calChoice = "/*Calendar Here*/";
 
 var GLOBAL = {
-  formId : "1Z6sopaaMSld4ZLP9Gt1mlZvSjfMl-2RUPePn5cAm9OM",
+  formId : "/*google form here*/",
   calendarVar :"This will be set in the switch",
-  calendarId : "uwlawschoolhelp@gmail.com"/*"2hs6j46a9vqs1n1fa3h63iblk0@group.calendar.google.com"*/,
-  calendarId2 : "b7gm6m86e11r29dg2osa1gbalk@group.calendar.google.com",
+  calendarId : "/*calendar id here*/",
+  calendarId2 : "/*calendar id here*/",
   formMap : {
     eventTitle : "Event Title",
     startDate : "Event Date",
@@ -60,92 +60,86 @@ function getFormResponse(){
     else if(i==2){
       eventObject.eventEndTime = eventObject.eventStartTime.substring(0,11);
       eventObject.eventEndTime = eventObject.eventEndTime.concat(thisResponse);
-      //eventObject.eventEndTime = eventObject.eventEndTime;
-      //debugger;
-      /*
-      eventObject.eventEndTime = moment(eventObject.eventStartTime);//Take start date and tack on second time.
-      eventObject.eventEndTime.add(parseInt(thisResponse), 'h').format('YYYY-MM-DD hh:mm:ss');
-      */
     }
     else if(i==3){
       eventObject.roomNumber = thisResponse;
       switch (eventObject.roomNumber) {
         case "2211":
-          eventObject.ipAddress = "128.104.94.137";
+          eventObject.ipAddress = "/*ip address or room name for room camera here*/";
           eventObject.description = "C3;R1";
           eventObject.eventTitle = "PR720<" + eventObject.eventTitle + ">";
           break;
         case "2260":
-          eventObject.ipAddress = "Law2260";
+          eventObject.ipAddress = "/*ip address or room name for room camera here*/";
           eventObject.description = "Event";
           eventObject.eventTitle =  eventObject.eventTitle;
-          calChoice = "b7gm6m86e11r29dg2osa1gbalk@group.calendar.google.com";
+          calChoice = "/*alternate calendar here*/";
           break;
         case "3250":
-          eventObject.ipAddress = "Law3250"; //"128.104.94.146"
+          eventObject.ipAddress = "/*ip address or room name for room camera here*/"; 
           //eventObject.description = "G3;V1;C3;R1";
           //eventObject.eventTitle = "PR720<" + eventObject.eventTitle + ">";
           eventObject.eventTitle = eventObject.eventTitle;
-          calChoice = "b7gm6m86e11r29dg2osa1gbalk@group.calendar.google.com" 
+          calChoice = "/*alternate calendar here*/" 
           break;
         case "5229":
-          eventObject.ipAddress = "Law5229"; //"128.104.94.147"
+          eventObject.ipAddress = "/*ip address or room name for room camera here*/";
           //eventObject.description = "G3;V1;C3;R1";
           eventObject.eventTitle = eventObject.eventTitle;
-          calChoice = "b7gm6m86e11r29dg2osa1gbalk@group.calendar.google.com"
+          calChoice = "/*alternate calendar here*/" 
           break;
         case "5240":
-          eventObject.ipAddress = "128.104.94.139";
+          eventObject.ipAddress = "/*ip address or room name for room camera here*/";
           eventObject.description = "C3;R1";
           eventObject.eventTitle = "PR720<" + eventObject.eventTitle + ">";
           break;
         case "5246":
-          eventObject.ipAddress = "128.104.94.140";
+          eventObject.ipAddress = "/*ip address or room name for room camera here*/";
           eventObject.description = "C3;R1";
           eventObject.eventTitle = "PR720<" + eventObject.eventTitle + ">";
           break;
         case "Lubar":
-          eventObject.ipAddress = "128.104.94.145";
+          eventObject.ipAddress = "/*ip address or room name for room camera here*/";
           eventObject.description = "G7;V1;C3;R1";
           eventObject.eventTitle = "PR720<" + eventObject.eventTitle + ">";
           break;
         case "2225":
-          eventObject.ipAddress = "128.104.94.148";
+          eventObject.ipAddress = "/*ip address or room name for room camera here*/";
           eventObject.description = "G3;V1;C3;R1";
           eventObject.eventTitle = "PR720<" + eventObject.eventTitle + ">";
           break;
         case "3226":
-          eventObject.ipAddress = "128.104.94.149";
+          eventObject.ipAddress = "/*ip address or room name for room camera here*/";
           eventObject.description = "G3;V1;C3;R1";
           eventObject.eventTitle = "PR720<" + eventObject.eventTitle + ">";
           break;
         case "3247":
-          eventObject.ipAddress = "128.104.94.150";
+          eventObject.ipAddress = "/*ip address or room name for room camera here*/";
           eventObject.description = "G3;V1;C3;R1";
           eventObject.eventTitle = "PR720<" + eventObject.eventTitle + ">";
           break;
         case "3253":
-          eventObject.ipAddress = "128.104.94.151";
+          eventObject.ipAddress = "/*ip address or room name for room camera here*/";
           eventObject.description = "G3;V1;C3;R1";
           eventObject.eventTitle = "PR720<" + eventObject.eventTitle + ">";
           break;
         case "3260":
-          eventObject.ipAddress = "128.104.94.152";
+          eventObject.ipAddress = "/*ip address or room name for room camera here*/";
           eventObject.description = "G3;V1;C3;R1";
           eventObject.eventTitle = "PR720<" + eventObject.eventTitle + ">";
           break;
         case "3261":
-          eventObject.ipAddress = "128.104.94.162";
+          eventObject.ipAddress = "/*ip address or room name for room camera here*/";
           eventObject.description = "G3;V1;C3;R1";
           eventObject.eventTitle = "PR720<" + eventObject.eventTitle + ">";
           break;
         case "3268":
-          eventObject.ipAddress = "128.104.94.163";
+          eventObject.ipAddress = "/*ip address or room name for room camera here*/";
           eventObject.description = "G3;V1;C3;R1";
           eventObject.eventTitle = "PR720<" + eventObject.eventTitle + ">";
           break;
         case "5223":
-          eventObject.ipAddress = "128.104.94.164";
+          eventObject.ipAddress = "/*ip address or room name for room camera here*/";
           eventObject.description = "G3;V1;C3;R1";
           eventObject.eventTitle = "PR720<" + eventObject.eventTitle + ">";
           break;
